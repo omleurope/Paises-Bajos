@@ -17,13 +17,13 @@
   <link rel="stylesheet" href="theme.css">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div class="wrap">
     <main class="card" role="main" aria-label="Perfil Links">
       <!-- ===== Íconos superiores ===== -->
       <div class="top-mini" aria-label="Acciones rápidas">
         <div class="left">
-          <!-- 🔴 Nuevo botón SVG sin cuadro gris -->
           <button class="flex h-10 items-center justify-center transition active:scale-[0.95] 
                          focus:outline-none w-10 rounded-full bg-transparent border-0 shadow-none" 
                   data-testid="LinktreeTreetop" title="Destacados">
@@ -43,9 +43,12 @@
       </div>
 
       <section class="profile">
-        <!-- 🔴 Avatar cambiado a logo -->
+        <!-- ✅ Logo actualizado -->
         <div class="avatar" aria-label="Logo">
-          <img src="https://lcreurope.com/wp-content/uploads/2025/07/cropped-cropped-LOGO-OFICIAL-OMLEUROPE-e1759201774472.png" alt="Logo OmlEurope">
+          <img
+            src="https://omleurope.com/wp-content/uploads/2025/08/LOGO_OFICIALMETE_OMLEUROPE-Pica-removebg-preview-2-3.png"
+            alt="Logo OmlEurope"
+          >
         </div>
 
         <h1 class="name">
@@ -55,6 +58,7 @@
         </h1>
 
         <p class="bio">☀️ Somos los proveedores más fiables de frutas y verduras ☀️</p>
+
         <nav class="socials" aria-label="Redes"></nav>
 
         <div class="segmented-wrap">
@@ -67,9 +71,10 @@
       </section>
 
       <section id="links" class="list" aria-label="Lista de enlaces"></section>
-      <section id="shop" class="shop" aria-label="Tienda"><div class="shop-grid" id="shopGrid"></div></section>
+      <section id="shop" class="shop" aria-label="Tienda">
+        <div class="shop-grid" id="shopGrid"></div>
+      </section>
 
-      <!-- 🔴 Footer corregido -->
       <footer class="footer" aria-label="Enlaces legales">
         <a href="#" target="_blank" rel="noopener">Cookie Preferences</a><span class="sep">·</span>
         <a href="https://linktr.ee/s/about/trust-center/report?field86145911=https%3A%2F%2Flinktr.ee%2Fomleurope" target="_blank" rel="noopener">Report</a><span class="sep">·</span>
@@ -99,9 +104,7 @@
   <!-- Lib QR -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
-  <!-- Estilos y JS -->
-  <link rel="stylesheet" href="theme.css">
-  <link rel="stylesheet" href="styles.css">
+  <!-- JS (IMPORTANTE: defer para que cargue después del DOM) -->
   <script src="app.js" defer></script>
 </body>
 </html>
